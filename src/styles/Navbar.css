@@ -53,8 +53,15 @@ span {
   cursor: pointer;
 }
 
+#open .logo {
+  display: none;
+}
+
 #open {
+  display: flex;
   height: 100vh;
+  align-items: center;
+  flex-direction: column;
 }
 
 #open .links {
@@ -68,6 +75,8 @@ span {
   text-align: center;
 }
 
+
+
 @media only screen and (max-width: 900px) {
   .navbar a {
     width: 70px;
@@ -79,6 +88,9 @@ span {
     display: flex;
   }
   #close a {
+    display: none;
+  }
+  #close .logo {
     display: none;
   }
 }
