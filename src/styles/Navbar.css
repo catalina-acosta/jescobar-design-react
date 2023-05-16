@@ -9,7 +9,6 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  color: var(--font-color1);
 }
 
 .logo {
@@ -20,7 +19,7 @@
   color: var(--font-color1);
   text-decoration: none;
   margin: 20px;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .navbar-elements {
