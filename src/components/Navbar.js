@@ -25,12 +25,11 @@ function Navbar() {
       </div>
       <div className='navbar-elements'>
         <div className='links'>
-          <Link to="/">Home</Link>
           <Link to="/projects">Projects</Link>
           <Link to="/about">About</Link>
           <Link to="/contact">Contact</Link>
         </div>
-        <h1 className='logo'>jeronimo escobar <span>design</span></h1>
+          <Link to="/"><h1 className='logo'>jeronimo escobar <span>design</span></h1></Link>
       </div>
     </div>
   )

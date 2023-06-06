@@ -27,4 +27,5 @@ h1, span {
 * {
   font-family: "Sen", Arial, Helvetica, sans-serif;
   color: var(--font-color1);
+  background: var(--background-color);
 }

@@ -13,6 +13,8 @@ function Footer() {
         <LinkedinIcon />
       </div>
       <p> &copy; 2023 jeronimo</p>
+      <p>email: jescobarb@gmail.com</p>
+      <p>IG Escobar Design</p>
     </div>
   )
 }
