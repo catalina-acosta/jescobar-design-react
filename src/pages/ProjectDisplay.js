@@ -40,10 +40,10 @@ function ProjectDisplay() {
       </div>
       <div className='slides-container'>
         <div className='arrow-container'>
-          <div className='right-arrow' onClick={nextSlide} >❱</div>
-          <div className='left-arrow' onClick={prevSlide} >❰</div>
+          <div className='right-arrow' onClick={nextSlide} >❰</div>
+          <div className='left-arrow' onClick={prevSlide} >❱</div>
         </div>
-        <div className=''><img src={slides[currentIndex]}/></div>
+        <div className='slide' style={{ backgroundImage: `url("${slides[currentIndex]}")` }}></div>
         <div className='dots-container'>
         {slides.map((slide, slideIndex) => (
           <div
@@ -56,7 +56,6 @@ function ProjectDisplay() {
         ))}
         </div>
       </div>
-
     </div>
   )
 }
