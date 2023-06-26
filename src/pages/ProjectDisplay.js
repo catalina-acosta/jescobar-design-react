@@ -1,7 +1,7 @@
-import {React, useState} from 'react'
-import { useParams } from "react-router-dom";
+import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
 import { ProjectList } from '../helpers/ProjectList';
-import "../styles/ProjectDisplay.css";
+import '../styles/ProjectDisplay.css';
 
 function ProjectDisplay() {
   const { id } = useParams();
@@ -13,51 +13,44 @@ function ProjectDisplay() {
   });
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [showFullScreen, setShowFullScreen] = useState(false);
 
-  const prevSlide = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
+  const toggleFullScreen = () => {
+    setShowFullScreen(!showFullScreen);
   };
 
-  const nextSlide = () => {
-    const isLastSlide = currentIndex === slides.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
-  };
-
-  const goToSlide = (slideIndex) => {
-    setCurrentIndex(slideIndex);
+  const exitFullScreen = () => {
+    setShowFullScreen(false);
   };
 
   return (
     <div className='project'>
       <div className='project-info'>
-        <h1> {project.name}</h1>
-        <h3> {project.date}</h3>
-        <h3> Client: {project.client}</h3>
-        <p> {project.description}</p>
+        <h1>{project.name}</h1>
+        <h3>{project.date}</h3>
+        <h3>Client: {project.client}</h3>
+        <p>{project.description}</p>
       </div>
-      <div className='slides-container'>
-        <div className='arrow-container'>
-          <div className='right-arrow' onClick={nextSlide} >❰</div>
-          <div className='left-arrow' onClick={prevSlide} >❱</div>
-        </div>
-        <div className='slide' style={{ backgroundImage: `url("${slides[currentIndex]}")` }}></div>
-        <div className='dots-container'>
-        {slides.map((slide, slideIndex) => (
+      <div className='img-column'>
+        {slides.map((slide, index) => (
           <div
-            key={slideIndex}
-            onClick={() => goToSlide(slideIndex)}
-            className='dot'
+            key={index}
+            className={`slide ${showFullScreen ? 'full-screen' : ''}`}
+            onClick={showFullScreen ? exitFullScreen : toggleFullScreen}
           >
-            ●
+            <img src={slide} alt={`Slide ${index}`} />
           </div>
         ))}
-        </div>
       </div>
+      {showFullScreen && (
+        <div className='full-screen-overlay'>
+          <div className='full-screen-content'>
+            <img src={slides[currentIndex]} alt='Full Screen' />
+          </div>
+        </div>
+      )}
     </div>
-  )
+  );
 }
 
-export default ProjectDisplay
+export default ProjectDisplay;
