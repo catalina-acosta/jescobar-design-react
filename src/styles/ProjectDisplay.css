@@ -3,8 +3,8 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 100px;
-  margin-right: 100px;
-  margin-left: 100px;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .project-info {
@@ -25,7 +25,6 @@
 
 .img-column {
   grid-column: 2;
-  max-width: 800px;
 }
 
 .slide {
@@ -66,4 +65,3 @@
   max-height: 100%;
   margin: 0 auto;
 }
-
