@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { ProjectList } from '../helpers/ProjectList';
 import '../styles/ProjectDisplay.css';
+import { getSpaceUntilMaxLength } from '@testing-library/user-event/dist/utils';
+import CloseIcon from '@mui/icons-material/Close';
 
 function ProjectDisplay() {
   const { id } = useParams();
@@ -12,16 +14,13 @@ function ProjectDisplay() {
     return image;
   });
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [showFullScreen, setShowFullScreen] = useState(false);
+  const [model, setModel] = useState(false);
+  const [tempimgSrc, setTempImgSrc] = useState('');
 
-  const toggleFullScreen = () => {
-    setShowFullScreen(!showFullScreen);
-  };
-
-  const exitFullScreen = () => {
-    setShowFullScreen(false);
-  };
+  const getImg = (slide) => {
+    setTempImgSrc(slide);
+    setModel(true);
+  }
 
   return (
     <div className='project'>
@@ -31,24 +30,17 @@ function ProjectDisplay() {
         <h3>Client: {project.client}</h3>
         <p>{project.description}</p>
       </div>
-      <div className='img-column'>
+      <div className={model ? "model open" : "model"}>
+        <img src={tempimgSrc} />
+        <CloseIcon onClick={() =>setModel(false)}/>
+      </div>
+      <div className='gallery'>
         {slides.map((slide, index) => (
-          <div
-            key={index}
-            className={`slide ${showFullScreen ? 'full-screen' : ''}`}
-            onClick={showFullScreen ? exitFullScreen : toggleFullScreen}
-          >
-            <img src={slide} alt={`Slide ${index}`} />
+          <div className='pics' key={index} onClick={()=>getImg(slide)}>
+            <img src={slide} style={{width: '100%'}}/>
           </div>
         ))}
       </div>
-      {showFullScreen && (
-        <div className='full-screen-overlay'>
-          <div className='full-screen-content'>
-            <img src={slides[currentIndex]} alt='Full Screen' />
-          </div>
-        </div>
-      )}
     </div>
   );
 }
