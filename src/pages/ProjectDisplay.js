@@ -1,7 +1,9 @@
-import {React, useState} from 'react'
-import { useParams } from "react-router-dom";
+import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
 import { ProjectList } from '../helpers/ProjectList';
-import "../styles/ProjectDisplay.css";
+import '../styles/ProjectDisplay.css';
+import { getSpaceUntilMaxLength } from '@testing-library/user-event/dist/utils';
+import CloseIcon from '@mui/icons-material/Close';
 
 function ProjectDisplay() {
   const { id } = useParams();
@@ -12,52 +14,35 @@ function ProjectDisplay() {
     return image;
   });
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [model, setModel] = useState(false);
+  const [tempimgSrc, setTempImgSrc] = useState('');
 
-  const prevSlide = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-  };
-
-  const nextSlide = () => {
-    const isLastSlide = currentIndex === slides.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
-  };
-
-  const goToSlide = (slideIndex) => {
-    setCurrentIndex(slideIndex);
-  };
+  const getImg = (slide) => {
+    setTempImgSrc(slide);
+    setModel(true);
+  }
 
   return (
     <div className='project'>
       <div className='project-info'>
-        <h1> {project.name}</h1>
-        <h3> {project.date}</h3>
-        <h3> Client: {project.client}</h3>
-        <p> {project.description}</p>
+        <h1>{project.name}</h1>
+        <h3>{project.date}</h3>
+        <h3>Client: {project.client}</h3>
+        <p>{project.description}</p>
       </div>
-      <div className='slides-container'>
-        <div className='arrow-container'>
-          <div className='right-arrow' onClick={nextSlide} >❰</div>
-          <div className='left-arrow' onClick={prevSlide} >❱</div>
-        </div>
-        <div className='slide' style={{ backgroundImage: `url("${slides[currentIndex]}")` }}></div>
-        <div className='dots-container'>
-        {slides.map((slide, slideIndex) => (
-          <div
-            key={slideIndex}
-            onClick={() => goToSlide(slideIndex)}
-            className='dot'
-          >
-            ●
+      <div className={model ? "model open" : "model"}>
+        <img src={tempimgSrc} />
+        <CloseIcon onClick={() =>setModel(false)}/>
+      </div>
+      <div className='gallery'>
+        {slides.map((slide, index) => (
+          <div className='pics' key={index} onClick={()=>getImg(slide)}>
+            <img src={slide} style={{width: '100%'}}/>
           </div>
         ))}
-        </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default ProjectDisplay
+export default ProjectDisplay;
