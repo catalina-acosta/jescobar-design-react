@@ -9,18 +9,19 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 15px;
+  gap: 2vw;
 }
 
 .logo {
-  margin: 20px;
+  margin: 20px 0 20px 20px
 }
 
 .navbar a {
   color: var(--font-color1);
   text-decoration: none;
-  margin: 20px;
+  margin: 20px 0;
   font-size: 18px;
+
 }
 
 .navbar-elements {
@@ -28,8 +29,8 @@
   align-items: center;
   justify-content: space-between;
   height: 100px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 2vw;
+  margin-right: 2vw;
 }
 
 span {
