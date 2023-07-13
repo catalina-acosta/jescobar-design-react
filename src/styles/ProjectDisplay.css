@@ -26,6 +26,22 @@
   text-align: left;
 }
 
+.project-info h1 {
+  font-size: 32px;
+}
+
+.project-info h3 {
+  font-size: 1.1em;
+  margin-block-start: 0;
+  margin-block-end: 0.2em;
+  font-weight: 50;
+  letter-spacing: 0.05em;
+}
+
+.project-info p {
+  margin-block-start: 1em;
+    margin-block-end: 0;
+}
 @media (min-width: 991px) {
   .project {
     display: flex;
