@@ -2,26 +2,26 @@
   -webkit-column-count: 3;
   -moz-column-count: 3;
   column-count: 3;
+  margin-top: 10vh;
   margin-right: 2vw;
   margin-left: 2vw;
   margin-bottom: 2vh;
 }
-.projects .projectTitle {
-  /*text-align: center;
-  color: var(--fontcolor1);
-  font-size: 60px;
-  font-weight: bolder; */
-}
 
-.projectList {
-
-}
 
 /* MENU ITEM STYLING */
 
 .projectItem {
-
+  position: relative;
+  display: inline-block;
+  margin-bottom: 12px;
 }
+
+.imageContainer {
+  position: relative;
+  overflow: hidden;
+}
+
 .projectItem:hover {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   transition: 0.3s ease-in;
@@ -32,7 +32,37 @@
   -webkit-transition: all 350ms ease;
   transition: all 350ms ease;
   cursor: pointer;
-  margin-bottom: 12px;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffffa8; /* Adjust the opacity as desired */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.projects .projectTitle {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  color: black;
+  background-color: transparent;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+
+.projectItem:hover .overlay {
+  opacity: 1;
+}
+
+.projectItem:hover .projectTitle {
+  opacity: 1;
 }
 
 .projectItem h1 {

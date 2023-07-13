@@ -40,59 +40,65 @@ function importAll(r) {
 
 export const ProjectList = [
   {
-    name: 1929,
+    name: "1929 an Art-Deco Obsession",
+    subtitle: "Bathroom Collection",
     images: arrImages1929,
-    date: 2021,
-    client: "Bombox",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet, sapien nec congue hendrerit, velit magna auctor neque, ut tincidunt diam libero id quam. Pellentesque congue in dolor et porttitor. Nulla vestibulum volutpat ante, ut mattis metus pretium nec. Curabitur et felis sed odio blandit eleifend. Donec sit amet ex sit amet neque molestie ornare. Proin turpis turpis, fermentum quis nisl tempus, pulvinar elementum sapien. Duis dictum euismod vehicula. Sed consequat neque vitae ultricies sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean at pharetra magna. Morbi justo lorem, consequat id varius vel, imperdiet a enim. Aenean ut dignissim turpis."
+    date: 2020,
+    client: "Concept",
+    description: "Bathroom Collection inspired on the Art-Deco style that searches to re-interpret this iconic period in a contemporary way."
   },
   {
-    name: "Boa",
+    name: "Boa di Mare",
+    subtitle: "Portable light",
     images: arrImagesBoa,
     date: 2021,
-    client: "Bombox",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet, sapien nec congue hendrerit, velit magna auctor neque, ut tincidunt diam libero id quam. Pellentesque congue in dolor et porttitor. Nulla vestibulum volutpat ante, ut mattis metus pretium nec. Curabitur et felis sed odio blandit eleifend. Donec sit amet ex sit amet neque molestie ornare. Proin turpis turpis, fermentum quis nisl tempus, pulvinar elementum sapien. Duis dictum euismod vehicula. Sed consequat neque vitae ultricies sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean at pharetra magna. Morbi justo lorem, consequat id varius vel, imperdiet a enim. Aenean ut dignissim turpis."
+    client: "Concept",
+    description: "The Boa di Mare aims to take advantage of the way light behaves on water projecting, reflecting and materializing it, creating a very special and almost theatrical atmosphere in this realm.",
+    description2: "At the same time seeks to be a functional piece to illuminate its surroundings and serve as a company light and a vessel, creating a special ambiance in amphibious environments"
   },
   {
     name: "Brasilia",
+    subtitle: "Furniture Collection",
     images: arrImagesBrasilia,
-    date: 2021,
-    client: "Bombox",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet, sapien nec congue hendrerit, velit magna auctor neque, ut tincidunt diam libero id quam. Pellentesque congue in dolor et porttitor. Nulla vestibulum volutpat ante, ut mattis metus pretium nec. Curabitur et felis sed odio blandit eleifend. Donec sit amet ex sit amet neque molestie ornare. Proin turpis turpis, fermentum quis nisl tempus, pulvinar elementum sapien. Duis dictum euismod vehicula. Sed consequat neque vitae ultricies sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean at pharetra magna. Morbi justo lorem, consequat id varius vel, imperdiet a enim. Aenean ut dignissim turpis."
+    date: 2022,
+    client: "Zientte-Bombox",
+    description: "Inspired by Oscar Niemeyer’s architectural gestures, this collection re-interprets the classic wooden bench into a series of comfortable pieces. By rounding the corners and chamfering the edges, the structure appears to be lighter while in contrast to the upholstery. The result is a contemporary piece with a vintage spirit."
   },
   {
-    name: "Coltrane",
+    name: "Coltrane Sofa",
     images: arrImagesColtrane,
-    date: 2021,
-    client: "Bombox",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet, sapien nec congue hendrerit, velit magna auctor neque, ut tincidunt diam libero id quam. Pellentesque congue in dolor et porttitor. Nulla vestibulum volutpat ante, ut mattis metus pretium nec. Curabitur et felis sed odio blandit eleifend. Donec sit amet ex sit amet neque molestie ornare. Proin turpis turpis, fermentum quis nisl tempus, pulvinar elementum sapien. Duis dictum euismod vehicula. Sed consequat neque vitae ultricies sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean at pharetra magna. Morbi justo lorem, consequat id varius vel, imperdiet a enim. Aenean ut dignissim turpis."
+    date: 2022,
+    client: "Private",
+    description: "Sofa design inspired by vintage pieces. looking for an elegant and light appearance while remaining very comfortable. The mix of leather fabric and metal gives the piece a certain dynamism while keeping a classical look."
   },
   {
-    name: "Dining out",
+    name: "DiningOut",
+    subtitle: "experience delivery concept",
     images: arrImagesDo,
     date: 2021,
-    client: "Bombox",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet, sapien nec congue hendrerit, velit magna auctor neque, ut tincidunt diam libero id quam. Pellentesque congue in dolor et porttitor. Nulla vestibulum volutpat ante, ut mattis metus pretium nec. Curabitur et felis sed odio blandit eleifend. Donec sit amet ex sit amet neque molestie ornare. Proin turpis turpis, fermentum quis nisl tempus, pulvinar elementum sapien. Duis dictum euismod vehicula. Sed consequat neque vitae ultricies sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean at pharetra magna. Morbi justo lorem, consequat id varius vel, imperdiet a enim. Aenean ut dignissim turpis."
+    description: "This project aims to create a brand that builds the experience of dining out, across the journey from the interface to the actual meal.",
+    description2: "In terms of mobility it might be true that food delivery is far from new or innovative, but the food is just half of the story, dining, beyond the feeding part is a ritual.  A restaurant is an extension of our personality, of our taste, character and decision-making skills; a good choice can turn into a meaningful relationship and a fond memory. Clearly food is the reason, but it is the experience, what actually creates the magic."
   },
   {
     name: "Fluvial",
     images: arrImagesFluvial,
-    date: 2021,
-    client: "Bombox",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet, sapien nec congue hendrerit, velit magna auctor neque, ut tincidunt diam libero id quam. Pellentesque congue in dolor et porttitor. Nulla vestibulum volutpat ante, ut mattis metus pretium nec. Curabitur et felis sed odio blandit eleifend. Donec sit amet ex sit amet neque molestie ornare. Proin turpis turpis, fermentum quis nisl tempus, pulvinar elementum sapien. Duis dictum euismod vehicula. Sed consequat neque vitae ultricies sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean at pharetra magna. Morbi justo lorem, consequat id varius vel, imperdiet a enim. Aenean ut dignissim turpis."
+    date: 2022,
+    client: "Concept",
+    description: "Small collection of vases inspired by different colombian rivers. After an exercise of thredimentionalization of the shape of the river, resulting in a variety of organic shapes."
   },
   {
     name: "Paramo",
     images: arrImagesParamo,
     date: 2021,
-    client: "Bombox",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet, sapien nec congue hendrerit, velit magna auctor neque, ut tincidunt diam libero id quam. Pellentesque congue in dolor et porttitor. Nulla vestibulum volutpat ante, ut mattis metus pretium nec. Curabitur et felis sed odio blandit eleifend. Donec sit amet ex sit amet neque molestie ornare. Proin turpis turpis, fermentum quis nisl tempus, pulvinar elementum sapien. Duis dictum euismod vehicula. Sed consequat neque vitae ultricies sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean at pharetra magna. Morbi justo lorem, consequat id varius vel, imperdiet a enim. Aenean ut dignissim turpis."
+    client: "Mario Hernandez",
+    description: "A series of graphic prints inspired on the natural life of the paramo regions of Colombia’s Andes mountains.",
+    description2: "After the extraction of color pallets and the abstraction of various shapes, the collection honors this important ecosystem and imprints its spirit on a series of designs."
   },
   {
-    name: "Wash your hands",
+    name: "Wash your Hands",
+    subtitle: "Covid awareness posters",
     images: arrImagesWyh,
-    date: 2021,
-    client: "Bombox",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet, sapien nec congue hendrerit, velit magna auctor neque, ut tincidunt diam libero id quam. Pellentesque congue in dolor et porttitor. Nulla vestibulum volutpat ante, ut mattis metus pretium nec. Curabitur et felis sed odio blandit eleifend. Donec sit amet ex sit amet neque molestie ornare. Proin turpis turpis, fermentum quis nisl tempus, pulvinar elementum sapien. Duis dictum euismod vehicula. Sed consequat neque vitae ultricies sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean at pharetra magna. Morbi justo lorem, consequat id varius vel, imperdiet a enim. Aenean ut dignissim turpis."
+    date: 2020,
+    description: "During the pandemic of COVID-19, the importance of self care actions has become paramount to overcome this situation. Washing your hands is an action that has become almost compulsive after any kind of activity."
   }
 ]
