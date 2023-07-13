@@ -26,9 +26,11 @@ function ProjectDisplay() {
     <div className='project'>
       <div className='project-info'>
         <h1>{project.name}</h1>
+        <h3>{project.subtitle}</h3>
         <h3>{project.date}</h3>
         <h3>Client: {project.client}</h3>
         <p>{project.description}</p>
+        <p>{project.description2}</p>
       </div>
       <div className={model ? "model open" : "model"}>
         <img src={tempimgSrc} />
