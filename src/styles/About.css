@@ -1,4 +1,19 @@
-.about-js {
-  height: 80vh;
+.about {
   margin-top: 10vh;
+  margin-right: 20vw;
+  margin-left: 20vw;
+  margin-bottom: 2vh;
+  /* gap: 3vw; */
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  justify-content: space-evenly;
+}
+
+.about p {
+  width: 400px;
+}
+
+.about img {
+
 }
