@@ -5,7 +5,7 @@ import Sk from '../assets/Brasilia/_7-Brasilia-ske.png'
 
 function Contact() {
   return (
-    <div>
+    <div className='contact'>
       <h1>Get in touch!</h1>
       <div className='contact-container'>
         <img src={Sk} style={{width: '500px'}}/>
