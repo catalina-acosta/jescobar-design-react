@@ -1,13 +1,9 @@
 
-.form-container {
-  width: 400px;
-  margin: 0 auto;
-}
 form {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  width: 100%;
+  width: 25vw;
   font-size: 16px;
 }
 
@@ -20,7 +16,7 @@ input {
   border: 1px solid rgb(220, 220, 220);
 
   &:focus {
-    border: 2px solid rgba(0, 206, 158, 1);
+    border: 2px solid var(--font-highlight);
   }
 }
 
@@ -36,7 +32,7 @@ textarea {
   border: 1px solid rgb(220, 220, 220);
 
   &:focus {
-    border: 2px solid rgba(0, 206, 158, 1);
+    border: 2px solid var(--font-highlight);
   }
 }
 

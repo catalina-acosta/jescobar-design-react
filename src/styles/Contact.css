@@ -1,6 +1,6 @@
-
-
-.contact {
-  height: 80vh;
-  margin-top: 10vh;
+.contact-container {
+  display: flex;
+  margin: 10vh auto;
+  justify-content: center;
+  gap: 1vw;
 }
