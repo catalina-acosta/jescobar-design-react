@@ -2,11 +2,20 @@
 
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 body {
   padding: 0;
   margin: 0;
+
+}
+
+.main-content {
+  flex-grow: 1; /* Make the main-content flex item grow to fill the available space */
+  padding-top: 10vh;
 }
 
 :root {
