@@ -18,7 +18,6 @@ const ContactForm = () => {
     };
 
   return (
-    <div className='form-container'>
       <form ref={form} onSubmit={sendEmail}>
         <label>Name</label>
         <input type="text" name="user_name" />
@@ -28,8 +27,6 @@ const ContactForm = () => {
         <textarea name="message" />
         <input type="submit" value="Send" />
       </form>
-    </div>
-
   );
 }
 export default ContactForm;
