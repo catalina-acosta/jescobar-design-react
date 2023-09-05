@@ -28,7 +28,7 @@ body {
 
 h1, span {
   font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 300;
   color: var(--font-color1);
 }

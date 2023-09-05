@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-top: 2px solid var(--font-color1);
+  border-top: 1px solid var(--font-color1);
   margin-left: 100px;
   margin-right: 100px;
 }
@@ -19,6 +19,7 @@
 .footer p {
   color: var(--font-color1);
   margin: 20px;
+  font-size: 12px;
 }
 
 @media only screen and (max-width: 600px) {

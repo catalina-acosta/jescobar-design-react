@@ -22,7 +22,7 @@
 .navbar a {
   color: var(--font-color1);
   text-decoration: none;
-  margin: 20px 0;
+  margin: 14px 0;
   font-size: 18px;
 
 }
@@ -31,7 +31,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
   margin-left: 2vw;
   margin-right: 2vw;
 }
@@ -59,10 +58,6 @@ span {
   cursor: pointer;
 }
 
-#open .logo {
-  display: none;
-}
-
 #open {
   display: flex;
   height: 100vh;
@@ -73,14 +68,18 @@ span {
 #open .links {
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: 100px;
+  margin-top: 50px;
 }
+
 
 #open a {
   width: 100%;
   text-align: center;
 }
 
+#open .logo {
+  display: none;
+}
 
 
 @media only screen and (max-width: 900px) {
@@ -117,4 +116,9 @@ span {
   #open .links {
     flex-direction: row;
   }
+
+  #open .logo {
+    display: none;
+
+}
 }
