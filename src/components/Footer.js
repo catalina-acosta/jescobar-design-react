@@ -7,13 +7,13 @@ import "../styles/Footer.css";
 function Footer() {
   return (
     <div className='footer'>
+      <p> &copy; Jeronimo Escobar All rights reserved </p>
+
       <div className='socialmedia'>
         <InstagramIcon />
-        <FacebookIcon />
         <LinkedinIcon />
       </div>
-      <p> &copy; Jeronimo Escobar All rights reserved </p>
-      <p>email: jeronimoescobarb@gmail.com</p>
+      <p className='email'>email: jeronimoescobarb@gmail.com</p>
     </div>
   )
 }

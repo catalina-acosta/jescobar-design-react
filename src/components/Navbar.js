@@ -15,6 +15,8 @@ function Navbar() {
   return (
     <div className='navbar' id={expandNavbar ? "open" : "close"}>
       <div className="toggleButton">
+        <div></div>
+        <h1 className='logo-small'>jeronimo escobar <span>design</span></h1>
         <button
           onClick={() => {
             setExpandNavbar((prev) => !prev);
@@ -29,7 +31,7 @@ function Navbar() {
           <Link to="/about">About</Link>
           <Link to="/contact">Contact</Link>
         </div>
-          <Link to="/"><h1 className='logo'>jeronimo escobar <span>design</span></h1></Link>
+          <Link to="/projects"><h1 className='logo'>jeronimo escobar <span>design</span></h1></Link>
       </div>
     </div>
   )

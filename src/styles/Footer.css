@@ -24,6 +24,29 @@
 
 @media only screen and (max-width: 600px) {
   .footer svg {
-    font-size: 50px;
+    font-size: 36px;
+  }
+
+  .footer {
+    height: 80px;
+    background: var(--background-color);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 1px solid var(--font-color1);
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .footer p {
+    margin: 10px
+  }
+
+  .socialmedia {
+    padding-top: 10px;
+  }
+
+  .email {
+    display: none;
   }
 }
