@@ -51,7 +51,8 @@ span {
   font-size: 50px;
 }
 .toggleButton button {
-  margin-right: 20px;
+  margin-right: 12px;
+  padding: 0;
   background-color: transparent;
   border: none;
   color: white;
@@ -91,12 +92,21 @@ span {
 @media only screen and (max-width: 600px) {
   .toggleButton {
     display: flex;
+    justify-content: space-between;
   }
   #close a {
     display: none;
   }
   #close .logo {
     display: none;
+  }
+  .logo-small span {
+    font-size: 18px;
+  }
+
+  .logo-small {
+    font-size: 18px;
+    margin-left: 10vw;
   }
 }
 
