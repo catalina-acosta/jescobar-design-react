@@ -8,3 +8,16 @@
   justify-content: center;
   gap: 1vw;
 }
+
+@media (max-width: 800px) {
+  .contact-container {
+  flex-direction: column;
+  margin: 5vh 1vw;
+  align-items: center;
+  }
+
+  .contact-container img {
+    width: 80%;
+  }
+
+}
