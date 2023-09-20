@@ -16,8 +16,8 @@ function App() {
         <div className='main-content'>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/jescobar-design-react/projects" element={<Projects />} />
-            <Route path="/jescobar-design-react/project/:id" element={<ProjectDisplay />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/project/:id" element={<ProjectDisplay />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
