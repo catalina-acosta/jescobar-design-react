@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { ProjectList } from '../helpers/ProjectList';
 import '../styles/ProjectDisplay.css';
-import { getSpaceUntilMaxLength } from '@testing-library/user-event/dist/utils';
 import CloseIcon from '@mui/icons-material/Close';
 
 function ProjectDisplay() {
@@ -33,13 +32,13 @@ function ProjectDisplay() {
         <p>{project.description2}</p>
       </div>
       <div className={model ? "model open" : "model"}>
-        <img src={tempimgSrc} />
+        <img src={tempimgSrc} alt=''/>
         <CloseIcon onClick={() =>setModel(false)}/>
       </div>
       <div className='gallery'>
         {slides.map((slide, index) => (
           <div className='pics' key={index} onClick={()=>getImg(slide)}>
-            <img src={slide} style={{width: '100%'}}/>
+            <img src={slide} style={{width: '100%'}} alt=''/>
           </div>
         ))}
       </div>

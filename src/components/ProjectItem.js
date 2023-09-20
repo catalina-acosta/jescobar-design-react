@@ -10,7 +10,7 @@ function ProjectItem({image, name, id}) {
       navigate("/project/" + id);
     }}>
       <div className='imageContainer'>
-        <img src={image} className='bgImage' style={{width: '100%'}}/>
+        <img src={image} className='bgImage' style={{width: '100%'}} alt=''/>
         <div className='overlay'/>
         <h1 className='projectTitle'>{name}</h1>
     </div>

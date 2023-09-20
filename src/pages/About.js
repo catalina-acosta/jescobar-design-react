@@ -13,7 +13,7 @@ function About() {
           <p>Architect graduated from Universidad Javeriana (Colombia) with a masters in Product Design from the Nouva Accademia di Belle Arti (NABA) Milano. He has developed his work in countries such as Colombia, Italy, USA, Switzerland and Spain, in different fields such as architecture, interior, strategic and product design.</p>
         </div>
       </div>
-      <img src={aboutImg} style={{width: '330px'}}></img>
+      <img src={aboutImg} style={{width: '330px'}} alt=''></img>
     </div>
   )
 }
