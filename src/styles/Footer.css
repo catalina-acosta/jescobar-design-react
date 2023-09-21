@@ -1,10 +1,10 @@
 .footer {
-  height: 80px;
+  height: 54px;
   background: var(--background-color);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-top: 1px solid var(--font-color1);
+  border-top: 1px solid #2b2d4278;
   margin-left: 100px;
   margin-right: 100px;
 }
@@ -40,10 +40,6 @@
 
   .footer p {
     margin: 10px
-  }
-
-  .socialmedia {
-    padding-top: 10px;
   }
 
   .email {

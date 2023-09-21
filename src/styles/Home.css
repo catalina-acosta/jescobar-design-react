@@ -32,3 +32,11 @@
     opacity: 1;
   }
 }
+
+.logo {
+  
+}
+
+.design-text {
+  color: var(--accent-color);
+}

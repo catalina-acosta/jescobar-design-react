@@ -12,7 +12,8 @@ function Home() {
       navigate('/projects');
     };
 
-    const text = 'Jeronimo Escobar Design';
+    const logo = 'design';
+    const text = `jeronimo escobar ${logo}`;
 
     const displayTextInterval = setInterval(() => {
       if (text.length > displayText.length) {
@@ -38,7 +39,7 @@ function Home() {
   return (
     <div className='home'>
       <div className='white-background'>
-        <h2>{displayText}</h2>
+        <h1 className='logo'>{displayText}</h1>
       </div>
       <div className='skills'></div>
     </div>
