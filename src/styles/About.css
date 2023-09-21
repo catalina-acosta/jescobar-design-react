@@ -15,7 +15,7 @@
 }
 
 .small-text {
-  width: calc(25vw - 20px);
+  width: calc(35vw - 10px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -32,7 +32,7 @@
 
 }
 
-@media (max-width: 900px) {
+@media (max-width: 991px) {
   .about {
   flex-direction: column;
   margin-right: 6vw;
@@ -54,4 +54,3 @@
     width: auto;
   }
 }
-

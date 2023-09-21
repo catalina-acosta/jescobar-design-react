@@ -62,20 +62,22 @@ span {
 #open {
   display: flex;
   height: 100vh;
-  align-items: center;
+  align-items: left;
   flex-direction: column;
+  margin-left: 1vw;
 }
 
 #open .links {
   flex-direction: column;
   justify-content: flex-start;
   margin-top: 50px;
+  margin-left: 20px;
 }
 
 
 #open a {
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 
 #open .logo {
@@ -85,7 +87,6 @@ span {
 
 @media only screen and (max-width: 900px) {
   .navbar a {
-    width: 70px;
   }
 }
 
@@ -101,12 +102,12 @@ span {
     display: none;
   }
   .logo-small span {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .logo-small {
-    font-size: 18px;
-    margin-left: 10vw;
+    font-size: 20px;
+    margin-left: 7.5vw;
   }
 }
 
