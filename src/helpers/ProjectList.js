@@ -9,7 +9,7 @@ function importAll(r) {
 
   const imagesBoa = importAll(require.context('../assets/Boa di mare', false, /\.(png|jpe?g|svg)$/));
 
-  const imagesBrasilia = importAll(require.context('../assets/Brasilia', false, /\.(png|jpe?g|svg)$/));
+  /*const imagesBrasilia = importAll(require.context('../assets/Brasilia', false, /\.(png|jpe?g|svg)$/));*/
 
   const imagesColtrane = importAll(require.context('../assets/Coltrane Sofa', false, /\.(png|jpe?g|svg)$/));
 
@@ -21,11 +21,13 @@ function importAll(r) {
 
   const imagesWyh = importAll(require.context('../assets/Wash your hands', false, /\.(png|jpe?g|svg)$/));
 
+  const imagesFold = importAll(require.context('../assets/Fold', false, /\.(png|jpe?g|svg)$/));
+
   const arrImages1929 = Object.values(images1929);
 
   const arrImagesBoa = Object.values(imagesBoa);
 
-  const arrImagesBrasilia = Object.values(imagesBrasilia);
+  /*const arrImagesBrasilia = Object.values(imagesBrasilia);*/
 
   const arrImagesColtrane = Object.values(imagesColtrane);
 
@@ -37,8 +39,18 @@ function importAll(r) {
 
   const arrImagesWyh = Object.values(imagesWyh);
 
+  const arrImagesFold = Object.values(imagesFold);
+
 
 export const ProjectList = [
+  {
+    name: "FOLD",
+    subtitle: "Furniture Collection",
+    images: arrImagesFold,
+    date: 2023,
+    client: "Zientte-Bombox",
+    description: "Born from the idea of catching one’s attention without trying to be the protagonist, this furniture Collection uses a simple gesture: the fold, that will be applied across all the pieces to create a system and a dialog across them. Compact and functional pieces allow for a highly efficient and versatile set of furniture."
+  },
   {
     name: "1929 an Art-Deco Obsession",
     subtitle: "Bathroom Collection",
@@ -56,14 +68,14 @@ export const ProjectList = [
     description: "The Boa di Mare aims to take advantage of the way light behaves on water projecting, reflecting and materializing it, creating a very special and almost theatrical atmosphere in this realm.",
     description2: "At the same time seeks to be a functional piece to illuminate its surroundings and serve as a company light and a vessel, creating a special ambiance in amphibious environments"
   },
-  {
+  /*{
     name: "Brasilia",
     subtitle: "Furniture Collection",
     images: arrImagesBrasilia,
     date: 2022,
     client: "Zientte-Bombox",
     description: "Inspired by Oscar Niemeyer’s architectural gestures, this collection re-interprets the classic wooden bench into a series of comfortable pieces. By rounding the corners and chamfering the edges, the structure appears to be lighter while in contrast to the upholstery. The result is a contemporary piece with a vintage spirit."
-  },
+  },*/
   {
     name: "Coltrane Sofa",
     images: arrImagesColtrane,
