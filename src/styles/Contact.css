@@ -9,12 +9,28 @@
   gap: 1vw;
 }
 
+.contact-container img {
+  width: 500px;
+}
+
 @media (max-width: 800px) {
   .contact-container {
   flex-direction: column;
   margin: 5vh 1vw;
   align-items: center;
   }
+
+  .contact-container img {
+    width: 80%;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    flex-direction: column;
+    margin: 0;
+    }
 
   .contact-container img {
     width: 80%;

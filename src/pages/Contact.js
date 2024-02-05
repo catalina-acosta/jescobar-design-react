@@ -8,7 +8,7 @@ function Contact() {
     <div className='contact'>
       <h1>Get in touch!</h1>
       <div className='contact-container'>
-        <img src={Sk} style={{width: '500px'}} alt=''/>
+        <img src={Sk} alt=''/>
         <ContactForm/>
       </div>
     </div>
