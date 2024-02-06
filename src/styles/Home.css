@@ -9,7 +9,6 @@
 /* Add this to your Home.css file */
 .white-background {
   background-color: white;
-  padding: 20px; /* Add padding as needed */
   border-radius: 10px; /* Add border-radius for rounded corners */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
   position: fixed;
@@ -31,10 +30,6 @@
   100% {
     opacity: 1;
   }
-}
-
-.logo {
-  
 }
 
 .design-text {

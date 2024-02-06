@@ -39,7 +39,7 @@ function Home() {
   return (
     <div className='home'>
       <div className='white-background'>
-        <h1 className='logo'>{displayText}</h1>
+        <h1 className='logo-home'>{displayText}</h1>
       </div>
       <div className='skills'></div>
     </div>
