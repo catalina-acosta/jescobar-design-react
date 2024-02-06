@@ -1,9 +1,13 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import "../styles/ContactForm.css"
+import Modal from '../components/Modal'
+import {useState} from 'react'
 
 const ContactForm = () => {
   const form = useRef();
+
+  const [openModal, setOpenModal] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -25,7 +29,9 @@ const ContactForm = () => {
         <input type="email" name="user_email" />
         <label>Message</label>
         <textarea name="message" />
-        <input type="submit" value="Send" />
+        <input className="openModalBtn" onClick={() => {setOpenModal(true);}}
+        type="submit" value="Send" />
+        {openModal && <Modal closeModal ={setOpenModal}/>}
       </form>
   );
 }
